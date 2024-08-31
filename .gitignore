@@ -1,0 +1,7 @@
+module-info.java
+.DS_Store
+.metadata/
+.settings/
+.classpath
+.project
+bin/
