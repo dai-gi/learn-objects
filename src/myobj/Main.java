@@ -8,9 +8,9 @@ public class Main {
 		Vehicle track = new Vehicle();
 
 		// 所有
-		car.ownerShip("daisuke", "普通自動車");
-		bike.ownerShip("daisuke", "普通二輪車");
-		track.ownerShip("daisuke", "中型トラック");
+		car.ownerShip("たーくん", "普通自動車");
+		bike.ownerShip("たーくん", "普通二輪車");
+		track.ownerShip("たーくん", "中型トラック");
 		
 		// 始動
 		car.starting();
