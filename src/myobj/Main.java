@@ -17,6 +17,5 @@ public class Main {
 		employee1.evaluation("A");
 		employee2.evaluation("B");
 		employee3.evaluation("C");
-		
 	}
 }
