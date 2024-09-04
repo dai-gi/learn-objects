@@ -2,29 +2,21 @@ package myobj;
 
 public class Main {
 	public static void main(String[] args) {
-		// インスタンス化
-		Vehicle car = new Vehicle();
-		Vehicle bike = new Vehicle();
-		Vehicle track = new Vehicle();
-
-		// 所有
-		car.ownerShip("たーくん", "普通自動車");
-		bike.ownerShip("たーくん", "普通二輪車");
-		track.ownerShip("たーくん", "中型トラック");
 		
-		// 始動
-		car.starting();
-		bike.starting();
-		track.starting();
+		// 求職者３名と面接を行う。
+		Employee employee1 = new Employee();
+		Employee employee2 = new Employee();
+		Employee employee3 = new Employee();
 		
-		// 停止する
-		car.stop();
-		bike.stop();
-		track.stop();
+		// ３名を採用し、契約を交わす。
+		employee1.contract("人事", 400000);
+		employee2.contract("エンジニア", 500000);
+		employee3.contract("営業", 600000);
 		
-		// 給油する
-		car.refuel("少し");
-		bike.refuel("半分");
-		track.refuel("満タン");
+		// 人事評価を各々に通知する
+		employee1.evaluation("A");
+		employee2.evaluation("B");
+		employee3.evaluation("C");
+		
 	}
 }
