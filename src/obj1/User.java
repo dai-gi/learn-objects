@@ -11,7 +11,7 @@ public class User {
 	String ranking;
 	
 	/**
-	 * 子供達の属性を定義する
+	 * 子供たちに名前をお小遣いを授ける
 	 * @param inputName    子供の名前
 	 * @param inputAmount  お小遣い
 	 */
@@ -21,22 +21,20 @@ public class User {
 	}
 	
 	/**
-	 * 子供達のお金の使い方についてタグづけをする
+	 * 子供のお金の使い方に対して子供にランキングを発表する
 	 */
 	void ranking() {
 		if (amount >= 1000000) {
-			ranking = "お金の使い方が上手な子";
-		} else if (amount >= 100000) {
-			ranking = "お金の使い方が普通の子";
-		} else if (amount >= 1) {
-			ranking = "お金の使い方が苦手な子";
-		} else {
-			ranking = "お金の使い方が荒い子";
-		}
+			ranking = "お金の使い方が上手";
+		} else if (amount >= 10000) {
+			ranking = "お金の使い方が普通";
+		} else if (amount == 0) {
+			ranking = "お金の使い方が荒い";
+		} 
 	}
 	
 	/**
-	 * 自分の子供について振り返る
+	 * 子供に対して自分の状態を教えるようにお願いする
 	 */
 	void output() {
 		System.out.println("名前:" + userName);
