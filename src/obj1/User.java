@@ -2,26 +2,22 @@ package obj1;
 import java.util.Random;
 
 public class User {
-    // フィールド	
-	// userName    名前
-	// amount      金額
-	// grades      成績
 	String userName;
 	int amount;
-	String grades;
+	String ranking;
 	
 	/**
-	 * 母から名前とお小遣いを授かるメソッド
-	 * @param inputName    名前
-	 * @param inputAmount  お小遣い
+	 * Userの入力用のメソッド
+	 * @param inputName    Inputする名前情報
+	 * @param inputAmount  Inputする売上情報
 	 */
 	void input(String inputName, int inputAmount) {
-		this.userName = inputName;
-		this.amount = inputAmount;
+		userName = inputName;
+		amount = inputAmount;
 	}
 	
 	/**
-	 * 学校からの成績表を受け取るメソッド
+	 * Userの売上額から、顧客ランクの設定を行う
 	 */
 	String gradebook() {
         // 科目に対する評価が10段階で渡される	
