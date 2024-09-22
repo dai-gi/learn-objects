@@ -4,6 +4,22 @@ public class User {
 	String userName;
 	int amount;
 	String ranking;
+/*
+ クラスと同名のメソッドが内部で実行されて、
+ オブジェクトが生成されることをコンストラクタという。
+*/
+//	public User() {
+//	}
+	
+	/**
+	 * コンストラクタはメソッドなので、引数を持たせることができる。
+	 * @param inputName　  Inputする名前情報
+	 * @param inputAmount　Inputする売上情報
+	 */
+	public User(String inputName, int inputAmount) {
+		this.userName = inputName;
+		this.amount = inputAmount;
+	}
 	
 	/**
 	 * Userの入力用のメソッド
