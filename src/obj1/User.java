@@ -31,11 +31,11 @@ public class User {
 	}
 	
 	/**
-	 * 自分の状態を伝えるメソッド
+	 * User情報を出力するメソッド
 	 */
 	void output() {
 		System.out.println("名前:" + this.userName);
 		System.out.println("金額:" + this.amount);
-		System.out.println("成績:" + this.grades);
+		System.out.println("顧客ランク:" + this.ranking);
 	}
 }
