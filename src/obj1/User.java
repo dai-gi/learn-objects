@@ -1,5 +1,4 @@
 package obj1;
-import java.util.Random;
 
 public class User {
 	String userName;
@@ -19,21 +18,16 @@ public class User {
 	/**
 	 * Userの売上額から、顧客ランクの設定を行う
 	 */
-	String gradebook() {
-        // 科目に対する評価が10段階で渡される	
-		Random rand = new Random();
-		int num = rand.nextInt(10) + 1;
-		
-        // 総合評価が A, B, C で渡される	
-		if (num >= 8) {
-			this.grades = "A";
-		} else if (num >= 5) {
-			this.grades = "B";
+	void rankJudge() {
+		if (amount >= 80) {
+			ranking = "お得意様";
+		} else if (amount >= 60) {
+			ranking = "常連様";
+		} else if (amount >= 40) {
+			ranking = "新規顧客";
 		} else {
-			this.grades = "C";
+			ranking = "冷やかし客";
 		}
-		
-		return this.grades;
 	}
 	
 	/**
