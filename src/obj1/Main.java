@@ -7,18 +7,23 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		User user1 = new User("たーくん", 15000);
-		User user2 = new User("まこたん", 0);
-		User user3 = new User("超富裕層Aさん", 2500000);
+		User user1 = new User();
+		User user2 = new User();
+		User user3 = new User();
 		
-		List<User> userList = new ArrayList<>();
-		userList.add(user1);
-		userList.add(user2);
-		userList.add(user3);
+		// 子供たちに名前をお小遣いを授ける
+		user1.input("たーくん", 15000);
+		user2.input("まこたん", 0);
+		user3.input("こうくん", 2500000);
 				
-		for (User tarUser : userList) {
-			tarUser.rankJudge();
-			tarUser.output();
-		}
+		// 子供のお金の使い方についてタグづけをする
+		user1.ranking();
+		user2.ranking();
+		user3.ranking();
+		
+		// 子供達に自分の状態を教えてほしいとお願いをする
+		user1.output();
+		user2.output();
+		user3.output();
 	}
 }
